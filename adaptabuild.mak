@@ -24,7 +24,6 @@ $(MODULE)_PATH := $(MODULE_PATH)
 SRC_C :=  
 SRC_ASM :=  
 
-# SRC_C += main.c
 SRC_C += Source/Templates/system_$(MCU_FAMILY)_singlecore.c
 
 $(MODULE)_startup_VARIANT := $(shell echo $(MCU_VARIANT) | tr '[:upper:]' '[:lower:]')
