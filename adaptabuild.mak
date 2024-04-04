@@ -41,6 +41,11 @@ $(MODULE)_INCPATH += $(MODULE_PATH)/Include
 $(MODULE)_INCPATH += $(cmsis_core_PATH)/Include
 
 # ----------------------------------------------------------------------------
+# The system_stm32h7xx_singlecore.c file needs math.h
+
+$(MODULE)_INCPATH += $(umm_libc_PATH)/include
+
+# ----------------------------------------------------------------------------
 # Set any module level compile time defaults here
 
 $(MODULE)_CDEFS :=
