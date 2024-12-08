@@ -31,10 +31,7 @@ $(MODULE)_startup_VARIANT := $(shell echo $(MCU_VARIANT) | tr '[:upper:]' '[:low
 SRC_ASM += Source/Templates/gcc/startup_$($(MODULE)_startup_VARIANT).s
 
 # ----------------------------------------------------------------------------
-# Set up the module level source and include paths
-
-$(MODULE)_SRCPATH :=
-$(MODULE)_SRCPATH += $(MODULE_PATH)/Source/Templates/gcc/
+# Set up the module level include path
 
 $(MODULE)_INCPATH :=
 $(MODULE)_INCPATH += $(MODULE_PATH)/Include
